@@ -25,7 +25,12 @@ function addli()
         console.log(templi)
 
     }
-    else{alert("Invalid Input")}
+    else
+    {   
+        alert("Invalid Input")
+        $("#in").css('border','2px solid red')
+
+    }
      $("#in").val('');
 }
 
