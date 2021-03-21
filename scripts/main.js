@@ -16,7 +16,8 @@ function addli()
         deletebtn.innerHTML='Delete'
         deletebtn.className='btn btn-primary'
         deletebtn.id='btn-delete'
-        templi.className='w-100'
+        deletebtn.style.float='right'
+        templi.className='p-2'
         templi.append(text)
         templi.append(deletebtn)
         list.append(templi)
