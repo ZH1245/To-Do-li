@@ -9,19 +9,18 @@ function addli()
     var list=$("#todo_list");
     if(!$("#in").val()=='')
     {
-        newli = document.createTextNode(newli)
+        var text = document.createTextNode(newli)
         var templi  = document.createElement('li')
         var deletebtn=document.createElement('button')
         console.log(deletebtn)
         deletebtn.innerHTML='Delete'
         deletebtn.className='btn btn-primary'
         deletebtn.id='btn-delete'
-        //deletebtn.addClass('btn-primary')
-
-        templi.append(newli)
+        templi.append(text)
         templi.append(deletebtn)
         list.append(templi)
         deletebtn.onclick=delli
+        console.log(templi)
 
     }
     else{alert("Invalid Input")}
