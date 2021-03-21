@@ -16,6 +16,7 @@ function addli()
         deletebtn.innerHTML='Delete'
         deletebtn.className='btn btn-primary'
         deletebtn.id='btn-delete'
+        templi.className='w-100'
         templi.append(text)
         templi.append(deletebtn)
         list.append(templi)
@@ -29,6 +30,15 @@ function addli()
 
 function delli() {
     console.log('delete pressed')
-    $(this).parent().remove()
+    if(confirm("Are you Sure you want to delete This Item?"))
+    {
+        $(this).parent().remove()    
+        alert("Item Removed")
+    }
+    else
+    {
+        alert("Not Removed")
+    }
+    // $(this).parent().remove()
 
   }
